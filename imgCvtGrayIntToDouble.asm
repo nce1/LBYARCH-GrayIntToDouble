@@ -8,7 +8,6 @@ default rel
 bits 64
 global imgCvtGrayIntToDouble
 imgCvtGrayIntToDouble:
-    ; To do push non-volatile registers
     IMUL RDX, RCX
     XOR RCX, RCX
     
