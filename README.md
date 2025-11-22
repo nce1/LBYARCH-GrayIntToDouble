@@ -35,7 +35,7 @@ The program was tested with four text files: the first three, which increased in
 
 ### 4. Values from 0 to 256 (16*16)
 * **Total Pixels:** 256
-* **Correctness:** The output appeared as expected. An input of 0 corresponds to 0.0, and an input of 255 corresponds to 1.0. The output also increases as expected from 0 to 256. Since the decimals are limited to two places, some input values, such as 0 and 1, produce the same output.
+* **Correctness:** The output appeared as expected. An input of 0 corresponds to 0.0, and an input of 255 corresponds to 1.0. The double output also increases from 0.0 to 1.0 as the input increases from 0 to 255. Since the decimals are limited to two places, some input values, such as 0 and 1, produce the same output.
 
 ### Overall Analysis
 The test results demonstrate that the x86-64 assembly module is highly optimized for this floating-point operation. For small and medium datasets, the computational cost is effectively zero relative to the system clock resolution. Notably, initializing the input array took way more time.
