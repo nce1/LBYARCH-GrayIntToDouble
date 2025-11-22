@@ -44,7 +44,7 @@ Even at the large scale (1 million pixels), the conversion takes less than 6 mil
   
 ## Appendix
 
-** Results Table **
+**Results Table**
 | 10*10 | 100*100 | 1000*1000 |
 | :--- | :--- | :--- |
 | 0.000 | 0.000 | 0.005 |
@@ -78,6 +78,7 @@ Even at the large scale (1 million pixels), the conversion takes less than 6 mil
 | 0.000 | 0.000 | 0.004 |
 | 0.000 | 0.000 | 0.006 |
 
+**Output of Fourth _testOutput.txt_**
 ![Correctness of Output](image/CorrectnessOutput.png)
 
 **Demo Link:** [YouTube](https://youtu.be/OmX_Ae9fHGo)
