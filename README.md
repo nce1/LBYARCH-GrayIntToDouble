@@ -16,7 +16,7 @@ $$f = \frac{\text{pixel}}{255.0}$$
 This normalizes the pixel intensity, mapping the integer range to the floating-point range.
 ## Test Results
 The program underwent testing with three datasets of increasing magnitude to verify execution efficiency. 
-*Note: Full data can be viewed in the Execution Time Table section.*
+*Note: Full data can be viewed at the bottom*
 
 ### 1. Small Scale Test (10 * 10)
 * **Total Pixels:** 100
@@ -38,7 +38,7 @@ The test results demonstrate that the x86-64 assembly module is highly optimized
 
 Even at the large scale (1 million pixels), the conversion takes less than 6 milliseconds on average. The observation that initialization time exceeds conversion time indicates that the primary bottleneck of the program is memory access and I/O overhead, rather than the computational logic itself. This confirms that offloading the arithmetic to assembly provided the expected performance benefits.
   
-## Execution Time Table
+## Appendix
   
 | 10*10 | 100*100 | 1000*1000 |
 | :--- | :--- | :--- |
@@ -72,3 +72,5 @@ Even at the large scale (1 million pixels), the conversion takes less than 6 mil
 | 0.000 | 0.000 | 0.004 |
 | 0.000 | 0.000 | 0.004 |
 | 0.000 | 0.000 | 0.006 |
+
+**Demo Link:** [YouTube](https://youtu.be/iMjDOhZBOp4)
