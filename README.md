@@ -22,7 +22,7 @@ The two implementations were tested with four text files: the first three, which
 ### 1. Small Scale Test (10 * 10)
 * **Total Pixels:** 100
 * **Correctness:** Both implementations accurately converted the integer inputs to their double-precision equivalents. Edge cases were verified successfully; for example, `0` mapped correctly to `0.00` and `255` mapped to `1.00`.
-* **Performance:** The execution time for both implementations was identical and consistently recorded as `0.000` seconds** across all 30 test runs. With only 100 pixels to iterate through, this instantaneous result is expected.
+* **Performance:** The execution time for both implementations was identical and consistently recorded as `0.000 seconds` across all 30 test runs. With only 100 pixels to iterate through, this instantaneous result is expected.
 
 ### 2. Medium Scale Test (100 * 100)
 * **Total Pixels:** 10,000
@@ -46,7 +46,7 @@ However, from the results, C outperformed the x86-64 assembly module in all thir
 
 **Results Table**
 | 10*10 (x86) | 10*10 (C) | 100*100 (x86) | 100*100 (C) | 1000*1000 (x86) | 1000*1000 (C) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | 0.000 | 0.000 | 0.000 | 0.000 | 0.004 | 0.003 |
 | 0.000 | 0.000 | 0.000 | 0.000 | 0.004 | 0.003 |
 | 0.000 | 0.000 | 0.000 | 0.000 | 0.004 | 0.003 |
